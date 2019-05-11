@@ -1,0 +1,98 @@
+body{
+	font: 15px/1.5 Arial ,Helvetica ,sans-serif;
+	margin : 0;
+	padding: 0;
+	background: #d4d4d4;
+}
+header{
+	background: #666;
+	min-height: 40px;
+}
+.button{
+	border: 1px red solid;
+	border-radius: 10px;
+}
+.container{
+	width:80%;
+	margin:auto;
+	overflow: hidden;
+}
+a{
+	padding: 3px 5px;
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	color: white;
+}
+.button:hover{
+	background-color: red;
+}
+
+/*header classes*/
+
+
+#branding{
+	float: left;
+	margin-top: 10px;
+}
+#branding h1{
+	margin:0;
+	padding: 0;
+	color: orange; 
+}
+.branding1{
+	float:left;
+	margin-top: 30px;
+	padding-left: 5px;
+}
+.branding1 p{
+	margin: 0;
+	color: white;
+}
+.logo{
+	background-image: url("logo.jpg");
+	margin: 5px 0px;
+	width:80px;
+	float: right;
+}
+
+/*nav bar starts*/
+
+nav{
+	background-color: #ff8c00;
+}
+.navbar{
+	float: left;
+	margin: 5px 0;
+}
+.navbar ul{
+	list-style: none;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+.navbar li{
+	text-decoration: none;
+	display: inline;
+	padding: 0 5px;
+	color: white;
+}
+
+.navbar1{
+	float: right;
+	margin: 5px 0;
+}
+.navbar1 ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.navbar1 li{
+	display: inline;
+	padding: 0 5px;
+	color: white;
+}
+.navbar1 a{
+	padding: 3px 10px;
+}
