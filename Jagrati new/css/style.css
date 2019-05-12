@@ -6,14 +6,19 @@ body{
 }
 header{
 	background: #666;
-	min-height: 40px;
+	min-height: 60px;
+}
+clr{
+	float: left;
+	display: block;
 }
 .button{
 	border: 1px red solid;
 	border-radius: 10px;
 }
+
 .container{
-	width:80%;
+	max-width:80%;
 	margin:auto;
 	overflow: hidden;
 }
@@ -62,23 +67,26 @@ a:hover{
 nav{
 	background-color: #ff8c00;
 }
-.navbar{
-	float: left;
-	margin: 5px 0;
-}
-.navbar ul{
-	list-style: none;
-	text-decoration: none;
-	padding: 0;
-	margin: 0;
-}
-.navbar li{
-	text-decoration: none;
-	display: inline;
-	padding: 0 5px;
-	color: white;
+.navbut{
+	border: 1px red solid;
+	border-radius: 4px;	
+	background-color: #ff8c00;
+	padding: 3px 10px;
 }
 
+.nav-button{
+	display: none;
+	float: left;
+	margin: 5px 0 5px 5px;
+	
+}
+.nav-button-close{
+	display: none;
+	float: left;
+	margin: 5px 0 5px 5px;
+}
+
+/*Right nav bar*/
 .navbar1{
 	float: right;
 	margin: 5px 0;
@@ -91,8 +99,53 @@ nav{
 .navbar1 li{
 	display: inline;
 	padding: 0 5px;
-	color: white;
+	color: black;
 }
 .navbar1 a{
 	padding: 3px 10px;
+}
+
+/*navbar in full size*/
+.navbar{
+	float: left;
+	margin: 5px 0;
+}
+.navbar ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.navbar li{
+	display: inline;
+	padding: 0 5px;
+	color: black;
+}
+
+
+/*button-controlled nav bar*/
+.navbar2{
+	display: none;
+	margin: 12px 5px;
+}
+.navbar2 ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.navbar2 li{
+	display: block;
+	padding: 0;
+	margin-top: 2px;
+	color: white;
+	border: 1px white solid;
+	border-radius: 5px;
+}
+
+@media(max-width: 760px){
+	.navbar{
+		display: none;
+	}
+	.nav-button{
+		display: block;
+	}
 }
