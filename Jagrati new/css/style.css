@@ -26,7 +26,7 @@ header{
 	overflow: hidden;
 }
 a{
-	padding: 3px 5px;
+	padding: 0px 0px;
 	text-decoration: none;
 	color: black;
 }
@@ -42,17 +42,24 @@ a:hover{
 
 #branding{
 	float: left;
-	margin-top: 10px;
+	margin: 15px 0;
+	/* align-content: space-between; */
 }
 #branding h1{
 	margin:0;
 	padding: 0;
-	color: orange; 
+	color: orange;
+	font-size: 1.8em;
+	letter-spacing: -0.5px; 
 }
 .branding1{
-	float:left;
-	margin-top: 30px;
-	padding-left: 5px;
+	/* float:left; */
+	margin-top: -22px;
+	/* padding-left: 5px; */
+	/*font-size: 0.9em;
+	word-spacing: -0.5px;
+	letter-spacing: -0.5px;*/
+	margin-left: 90px;
 }
 .branding1 p{
 	margin: 0;
@@ -61,7 +68,7 @@ a:hover{
 .logo{
 	background-image: url("logo.jpg");
 	margin: 5px 0px;
-	width:80px;
+	height: 60px;
 	float: right;
 }
 
@@ -72,9 +79,9 @@ nav{
 }
 .navbut{
 	border: 1px red solid;
-	border-radius: 4px;	
+	border-radius: 4px;
 	background-color: #ff8c00;
-	padding: 3px 10px;
+	padding: 5px 10px;
 }
 
 .nav-button{
@@ -138,6 +145,7 @@ nav{
 .navbar2 li{
 	display: block;
 	padding: 0;
+	padding-left: 5px;
 	margin-top: 2px;
 	color: white;
 	border: 1px white solid;
@@ -150,5 +158,20 @@ nav{
 	}
 	.nav-button{
 		display: block;
+	}
+}
+
+@media(max-width: 400px){
+	#branding{
+		margin: 11px 0;
+	}
+	.branding1{
+		float: none;
+		display: block;
+		margin-top: -4px;
+		margin-left: 03px;
+	}
+	.logo{
+		height: 70px;
 	}
 }
