@@ -29,3 +29,10 @@ function for_media_query(x){
 var x=window.matchMedia("(max-width:760px)");
 for_media_query(x);
 x.addListener(for_media_query);  /*Whenever value of x is changed, for_media_query is called.*/
+
+// Navbar closes if clicks anywhere else
+window.onclick = function(e){
+	if(!e.target.matches('.navbut')){
+		nav_button_close();
+	}
+}
