@@ -32,7 +32,7 @@ x.addListener(for_media_query);  /*Whenever value of x is changed, for_media_que
 
 // Navbar closes if clicks anywhere else
 window.onclick = function(e){
-	if(!e.target.matches('.navbut')){
+	if(!e.target.matches('.nav-button')){
 		nav_button_close();
 	}
 }
