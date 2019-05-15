@@ -199,26 +199,27 @@ nav{
 	padding-top: 100px;
 }
 .don-modal-contents{
-	position: relative;
 	width: 80%;
 	margin: auto;
 	background-color: #ddd;
 	border: 1px #222 solid;
 	border-radius: 7px;
 	overflow: auto;
+	max-height: 75%;
 }
 .don-modal-contents .container{
 	max-width: 90%;
 }
 .don-modal-contents .close{
 	position: absolute;
-	top: 0;
-	right: 13px;
+	top: 100px;
+	right: 10%;
 	float:right;
 	color: #333;
 	font-size: 28px;
 	font-weight: bold;
 	cursor: pointer;
+	transform: translateX(-13px);
 	/*z-index: 2;*/
 	/*margin-right: 13px; */
 }
@@ -253,6 +254,7 @@ footer{
 }
 
 /*Media Queries*/
+/*For Nav bar*/
 @media(max-width: 760px){
 	.navbar{
 		display: none;
@@ -261,7 +263,14 @@ footer{
 		display: block;
 	}
 }
-
+/*For Donate Us modal box*/
+@media(max-width: 500px){
+	.don-box2, .don-box3{
+		float: none;
+		width: 100%
+	}
+}
+/*For Jagrati Branding*/
 @media(max-width: 400px){
 	#branding{
 		margin: 11px 0;
