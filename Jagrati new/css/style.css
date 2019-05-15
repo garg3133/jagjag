@@ -139,10 +139,13 @@ nav{
 	position: absolute;
 	top: 32px;
 	left: 0px;
-	display: none;
-	padding: 2px 5px 5px;
-	width: -webkit-fill-available;
+	padding: 0;
+	width: 100%;
 	background-color: rgba(255,140,0,0.9);
+	box-sizing: border-box;
+	height:0px;
+	overflow: hidden;
+	transition: 400ms;
 }
 .navbar2 ul{
 	list-style: none;
@@ -166,6 +169,12 @@ nav{
 	min-height: 1000px;
 	/* z-index: -1; */
 }
+/*#showcase h1{
+	text-align: center;
+	color: rgb(255,140,0);
+	margin-top: 300px;
+	font-size: 70px;
+}*/
 
 
 /*Media Queries*/
