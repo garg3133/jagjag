@@ -145,7 +145,7 @@ nav{
 	box-sizing: border-box;
 	height:0px;
 	overflow: hidden;
-	transition: 400ms;
+	transition: 1000ms;
 }
 .navbar2 ul{
 	list-style: none;
