@@ -1,9 +1,11 @@
+//Nav bar variables
+const nav_height= "131px";
 //Nav button controls
 
 function nav_button(){
 	var a = document.getElementById("inavbar2");
 	a.style.padding="2px 5px 5px";
-	a.style.height="131px";
+	a.style.height=nav_height;
 	var a = document.getElementById("inav-button-close");
 	a.style.display="block";
 	var a = document.getElementById("inav-button");
@@ -44,4 +46,17 @@ window.onclick = function(e){
 			nav_button_close();
 		}
 	}
+	if(e.target == don_modal){
+		don_modal.style.display="none";
+	}
+}
+
+// Donate Us Modal Close
+const don_modal = document.getElementById("don-modal");
+function donate_us(){
+	don_modal.style.display="block";
+}
+const modal_cl = document.getElementById("don-close");
+modal_cl.onclick = function(){
+	don_modal.style.display="none";
 }
