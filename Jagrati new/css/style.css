@@ -31,6 +31,7 @@ a{
 	padding: 0px 0px;
 	text-decoration: none;
 	color: black;
+	/*display: inline-block;*/
 }
 a:hover{
 	color: white;
@@ -184,6 +185,32 @@ nav{
 	font-size: 2.5em;
 }
 
+/*Q2 starts*/
+
+.q2{
+	background-color: #ff8c00;
+	padding: 15px;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+}
+.q2-button{
+	background-color: white;
+	font-size: 14px;
+	color: #ff8c00;
+	border-radius: 4px;
+	padding: 10px 20px;
+	margin-bottom: 10px;
+	transition: 400ms;
+}
+.q2 a{
+	display: inline-block;
+}
+.q2-button:hover{
+	background-color: #1a1b1e;
+	color: white;
+}
+
 /*DONATE US STARTS*/
 
 #donate-us{
@@ -191,6 +218,7 @@ nav{
 	background-color: #26272c;
 	background-color: #1a1b1e;
 	text-align: center;
+	padding: 10px 0;
 }
 #donate-us h1{
 	margin: 0;
@@ -207,20 +235,20 @@ nav{
 	background-color: #ff8c00;
 }
 #donate-us .don-button{
-	padding: 6px 15px;
+	padding: 8px 20px;
 	background-color: white;
 	/*color: #616370;*/
 	border: 1px #222 solid;
-	border-radius: 10px;
+	border-radius: 13px;
 	font-size: 15px;
 	margin-bottom: 10px;
 	cursor: pointer;
+	transition: 400ms;
 }
 #donate-us .don-button:hover{
-	padding: 6px 20px;
+	padding: 8px 25px;
 	background-color: red;
 	color: white;
-	transition: 400ms;
 }
 
 /*DONATE-US MODAL BOX STARTS*/
@@ -294,11 +322,12 @@ nav{
 
 #contact-us{
 	text-align: center;
+	padding: 10px 0 0;
 	/*background-color: #616370;*/
 }
 #contact-us h1{
 	margin: 0;
-	padding: 5px 0 10px;
+	padding: 5px 0 15px;
 }
 #contact-us h1::after{
 	content: "";
@@ -388,9 +417,30 @@ footer{
 		margin-top: 20px;
 	}
 }
+@media(min-width: 900px){
+	#googleMap{
+		height: 300px;
+	}
+	.con-box1:first-child{
+		padding-left: 40px;
+	}
+	.con-box1:nth-child(2){
+		padding-right: 40px;
+	}
+}
+/*For SHOWCASE section*/
 @media(min-width: 1080px){
 	#showcase{
 		background-size: cover;
 		background-position-y: -175px; 
+	}
+	.con-box1:first-child{
+		padding-left: 80px;
+	}
+	.con-box1:nth-child(2){
+		padding-right: 80px;
+	}
+	#contact-us .container{
+		width: 70%;
 	}
 }
