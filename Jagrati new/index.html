@@ -4,6 +4,7 @@
 	<title>Jagrati</title>
 	<link rel="shortcut icon" href="logo.png">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	
 </head>
 <body>
@@ -160,7 +161,7 @@
 			<h1>Donate Us</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			</p>
-			<button class="button" onclick="donate_us()">Donate</button>
+			<button class="don-button" onclick="donate_us()">Donate</button>
 		</div>
 	</section>
 <!-- Donate Us section ends -->
@@ -184,12 +185,9 @@
 				</div>
 				<div class="don-box3">
 					<h3>Contact Details</h3>
-					<h5><i></i></h5>
-					<p>+91-xxxxx-xxxxx</p>
-					<h5><i></i></h5>
-					<p>jagrati@iiitdmj.ac.in</p>
-					<h5><i></i></h5>
-					<p>PDPM IIITDM JABALPUR</p>
+					<p><i class="fas fa-mobile fa-2x"></i>  +91-xxxxx-xxxxx</p>
+					<p><i class="fas fa-envelope fa-2x"></i>  jagrati@iiitdmj.ac.in</p>
+					<p><i class="fas fa-map-marker-alt fa-2x"></i>  PDPM IIITDM JABALPUR</p>
 				</div>
 			</div>
 		</div>
@@ -199,7 +197,25 @@
 <!-- Contact Us section starts -->
 	<section id="contact-us">
 		<div class="container">
-			Contact Us
+			<h1>Contact Us</h1>
+			<div id="googleMap"></div>
+			<p><i class="fas fa-map-marker-alt fa-2x"></i>  Pandit Dwarka Prasad Mishra Indian Institute of Information Technology, Design and Manufacturing Jabalpur</p>
+			<div>
+				<div class="con-box1">
+					<p><i class="fas fa-mobile fa-2x"></i>  +91-xxxxx-xxxxx</p>
+				</div>
+				<div class="con-box1">
+					<p><i class="fas fa-envelope fa-2x"></i>  jagrati@iiitdmj.ac.in</p>
+				</div>
+			</div>
+			<div class="clr"></div>
+			<div class="con-box2">
+				<p>
+					<a href="https://www.facebook.com/JAGRATI.IIITDMJ/"><i class="fab fa-facebook fa-2x"></i></a>
+					<a href="https://www.instagram.com/jagrati.iiitdmj/"><i class="fab fa-instagram fa-2x"></i></a>
+					<a href="https://www.youtube.com/channel/UC0VyWk6o3XXGi1oq-XIbbJQ/"><i class="fab fa-youtube fa-2x"></i></a>
+				</p>
+			</div>
 		</div>
 	</section>
 <!-- Contact Us section ends -->
@@ -213,5 +229,7 @@
 <!-- Footer ends -->
 
 	<script type="text/javascript" src="js/myjs.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJuMBHnVGHzt-a1sfFWnffTefJSCAS2gU&callback=myMap"
+  type="text/javascript"></script>
 
 </body></html>

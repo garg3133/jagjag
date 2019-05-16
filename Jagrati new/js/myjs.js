@@ -60,3 +60,14 @@ const modal_cl = document.getElementById("don-close");
 modal_cl.onclick = function(){
 	don_modal.style.display="none";
 }
+
+//Google Map API
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(23.1782409,80.0252362),
+  zoom:15,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position: mapProp.center});
+marker.setMap(map); 
+}
