@@ -516,7 +516,23 @@ nav{
 	margin: auto;
 	box-sizing: border-box;
 }
-
+/*Contact Us Side Nav*/
+.con-sidenav a{
+	position: fixed;
+	bottom: 90px;
+	right: -90px;
+	width: 100px;
+	padding: 15px;
+	text-decoration: none;
+	color: white;
+	background-color: red;
+	border-radius: 5px 0 0 5px;
+	transition: 0.3s;
+	/*cursor: pointer;*/
+}
+.con-sidenav a:hover{
+	right:-10px;
+}
 /*FOOTER STARTS*/
 
 footer{
