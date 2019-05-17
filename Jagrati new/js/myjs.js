@@ -1,5 +1,6 @@
 //Nav bar variables
 const nav_height= "131px";
+
 //Nav button controls
 
 function nav_button(){
@@ -39,13 +40,15 @@ for_media_query(x);
 x.addListener(for_media_query);  /*Whenever value of x is changed, for_media_query is called.*/
 
 
-// Navbar closes if clicks anywhere else
+
 window.onclick = function(e){
+	// Navbar closes if clicks anywhere else
 	if(!(e.target.matches('.navbut') || e.target.matches('.menu-icon'))){
 		if(document.getElementById("inavbar2").style.height==="131px"){
 			nav_button_close();
 		}
 	}
+	// Donate us modal close
 	if(e.target == don_modal){
 		don_modal.style.display="none";
 	}
@@ -70,4 +73,15 @@ var mapProp= {
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 var marker = new google.maps.Marker({position: mapProp.center});
 marker.setMap(map); 
+}
+
+const show_p_txt = "give way to changing life of needy children Education";
+let i=0;
+show_p();
+function show_p(){	
+	if(i < show_p_txt.length){
+		document.getElementById("show-p").innerHTML += show_p_txt.charAt(i);
+		i++;
+		setTimeout(show_p, 50); //speed is in milliseconds
+	}
 }
