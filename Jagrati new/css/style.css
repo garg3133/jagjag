@@ -244,6 +244,7 @@ nav{
 	text-align: center;
 	background-color: #1a1b1e;
 	color: #616370;
+	color: #818390;
 }
 #about-us h1, #about-us h2{
 	color: white;
@@ -338,6 +339,7 @@ nav{
 	text-align: center;
 	background-color: #26272c;
 	color: #616370;
+	color: #818390
 }
 #services h1, #services h2{
 	color: white;
@@ -406,6 +408,7 @@ nav{
 
 #donate-us{
 	color: #616370;
+	color: #818390;
 	background-color: #26272c;
 	background-color: #1a1b1e;
 	text-align: center;
