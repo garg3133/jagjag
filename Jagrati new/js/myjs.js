@@ -85,3 +85,9 @@ function show_p(){
 		setTimeout(show_p, 50); //speed is in milliseconds
 	}
 }
+
+
+function animationn(){
+	const element =  document.querySelector('#about-us .intro');
+	element.classList.add('animated', 'fadeInUp');
+}

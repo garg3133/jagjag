@@ -4,6 +4,7 @@
 	<title>Jagrati</title>
 	<link rel="shortcut icon" href="logo.png">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	
 </head>
@@ -71,7 +72,7 @@
 	<section id="showcase">
 		<div class="show-bg">
 			<div class="container">
-				<h1>Jagrati Promotes <span style="color: #ff8c00;">Education in Villages</span></h1>
+				<h1 data-aos="zoom-in" data-aos-duration="1500">Jagrati Promotes <span style="color: #ff8c00;">Education in Villages</span></h1>
 				<p id="show-p"></p>
 			</div>
 		</div>
@@ -81,25 +82,25 @@
 	<!-- About section starts -->
 	<section id="about-us">
 		<div class="container">
-			<div class="intro">
+			<div class="intro" data-aos='fade-up'>
 				<h1>About Us</h1>
 				<p>You must not lose faith in humanity. Humanity is an ocean; if a few drops of the ocean are dirty, the ocean does not become dirty.</p>
 			</div>
 			<div class="vision">
-				<div>
+				<div data-aos='fade-left' data-aos-delay="300" data-aos-easing='ease-in' data-aos-duration="500">
 					<img src="images/01.jpg">
 				</div>
-				<div>
+				<div data-aos='fade-right'>
 					<h2>VISION</h2>
 					<p>Our vision is to see india one day having no person illiterate and no poverty .We are trying to make good citizens of India.Technological resources for contributing to the economic and social development of the nation at large and region in particular.</p>
 				</div>
 			</div>
 			<div class="clr"></div>
 			<div class="mission">
-				<div>
+				<div data-aos='fade-right' data-aos-delay="300" data-aos-easing='ease-in' data-aos-duration="500">
 					<img src="images/05.jpg">
 				</div>
-				<div>
+				<div data-aos='fade-left'>
 					<h2>MISSION</h2>
 					<p>Our mission is to erradicate illiteracy from India We are moving toward our mission by implementing this in IIIT Jabalpur by giving quality and value education to student of nearby villages. Our ultimate goal to extend our helping hand to each and every needy in India and make new India in the comming days.</p>
 				</div>
@@ -246,7 +247,9 @@
 <!-- Footer ends -->
 
 	<script type="text/javascript" src="js/myjs.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJuMBHnVGHzt-a1sfFWnffTefJSCAS2gU&callback=myMap"
   type="text/javascript"></script>
+  <script>AOS.init();</script>
 
 </body></html>

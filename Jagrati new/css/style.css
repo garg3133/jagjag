@@ -77,6 +77,7 @@ nav{
 	position: sticky;
 	top: 0;
 	background-color: #ff8c00;
+	z-index: 1;
 }
 .navbut{
 	border: 1px red solid;
@@ -116,16 +117,44 @@ nav{
 	color: black;
 }
 .navbar1 .button{
+	position: relative;
 	padding: 3px 10px;
 	background-color: #ff8c00;
 	font-size: 15px;
-	transition: 0.5s;
+	overflow: hidden;
+	transition: 0.5s ease;
 }
 .navbar1 .button:hover{
 	background-color: red;
 	color: white;
 	padding: 3px 12px;
 }
+/*.navbar1 .button:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 1px;
+	margin: auto;
+	background: red;
+	opacity: 0;
+	transition: all 0.3s ease;
+	z-index: 0;
+	box-sizing: border-box;
+}
+.navbar1 .button:hover:before{
+	transform: scaleX(67);
+	opacity: 1;
+}
+.navbar1 .button span{
+	position: relative;
+	z-index: 5;
+}
+.navbar1 a{
+	overflow: hidden;
+}*/
 
 /*navbar in full size*/
 .navbar{
@@ -370,7 +399,7 @@ nav{
 }
 .q2 iframe{
 	width: 80%;
-	height: 50%;
+	height: 60%;
 	margin-bottom: 10px;
 }
 /*DONATE US STARTS*/
@@ -560,6 +589,12 @@ footer{
 
 /*MEDIA QUERIES*/
 
+@media(max-width: 1000px){
+	/*For Youtube Video*/
+	.q2 iframe{
+		height: 50%;
+	}
+}
 @media(max-width: 900px){
 	/*For Youtube Video*/
 	.q2 iframe{
