@@ -517,6 +517,7 @@ nav{
 .don-box2 p{
 	margin: 0 0 20px;
 }
+
 /*CONTACT US STARTS*/
 
 #contact-us{
@@ -618,7 +619,6 @@ footer{
 	#about-us img{
 		width: 80%;
 	}
-
 	.vision p, .mission p{
 		width: 90%;
 		margin: auto;

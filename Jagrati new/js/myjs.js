@@ -75,6 +75,7 @@ var marker = new google.maps.Marker({position: mapProp.center});
 marker.setMap(map); 
 }
 
+// SHOWCASE TEXT
 const show_p_txt = "give way to changing life of needy children Education";
 let i=0;
 show_p();
@@ -84,10 +85,4 @@ function show_p(){
 		i++;
 		setTimeout(show_p, 50); //speed is in milliseconds
 	}
-}
-
-
-function animationn(){
-	const element =  document.querySelector('#about-us .intro');
-	element.classList.add('animated', 'fadeInUp');
 }
