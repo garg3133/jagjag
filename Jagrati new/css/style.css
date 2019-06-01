@@ -307,6 +307,85 @@ nav{
 	padding: 10px;
 }*/
 
+/*INITIATIVES STARTS*/
+
+#initiatives{
+	text-align: center;
+	background-color: #1e1e1e;
+}
+#initiatives h1{
+	color: #fff;
+}
+#initiatives h1::after{
+	content: "";
+	display: block;
+	width: 13%;
+	margin: auto;
+	margin-top: 2px;
+	height: 2px;
+	background-color: #ff8c00;
+}
+.llll{
+	transform: perspective(1000px) rotateY(30deg);
+}
+.rrrr{
+	transform: perspective(1000px) rotateY(-30deg);
+}
+.glide__slide--clone:nth-child(2){
+	transform: perspective(1000px) rotateY(30deg);
+}
+.glide__slide--clone:nth-last-child(2){
+	transform: perspective(1000px) rotateY(-30deg);
+}
+.card{
+	position: relative;
+	background-color: #e9e9e9;
+	border-radius: 5px;
+	height: 400px;
+	width: 300px;
+	margin: 15px auto;
+	transition: 500ms;
+}
+.card img{
+	width: 100%;
+	/*height: 300px;*/
+	/*height: 170px;*/
+	border-radius: 5px 5px 0 0;
+}
+.card h2{
+	background-color: rgba(0,0,0,0.3);
+	margin: 0;
+	padding: 7px;
+}
+.card p{
+	margin: 0;
+	padding: 3px 7px 10px;
+}
+.card1{
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	background-color: #919395;
+	border-radius: 5px;
+	height: 400px;
+	width: 300px;
+	margin: auto;
+	z-index: -1;
+	transition: 500ms;
+}
+.card1 p{
+	padding: 3px 10px 10px;
+}
+#initiatives li:hover .card{
+	top: -10px;
+	right: -10px;
+}
+#initiatives li:hover .card1{
+	top: 10px;
+	right: 10px;
+	z-index: 0;
+}
+
 /*Q1 starts*/
 
 .q1{
