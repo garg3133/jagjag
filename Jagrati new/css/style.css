@@ -392,7 +392,7 @@ nav{
 	height: 100%;
 	border-radius: 5px 5px 0 0;
 }
-.card h2{
+.card_h2{
 	position: absolute;
 	top: 310px;
 	left: 0;
@@ -437,6 +437,20 @@ nav{
 	/*left: -10px;*/
 	/*bottom: -10px;*/
 	/*z-index: 1;*/
+	padding: 7px;
+	transform: rotateX(360deg) translateX(-10px) translateY(-300px);
+	background-color: transparent;
+}
+.card_hover{
+	top: -10px;
+	right: -10px;
+}
+.card1_hover{
+	top: 10px;
+	right: 10px;
+	z-index: 0;
+}
+.h_hover{
 	padding: 7px;
 	transform: rotateX(360deg) translateX(-10px) translateY(-300px);
 	background-color: transparent;
