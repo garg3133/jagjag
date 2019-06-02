@@ -2,7 +2,7 @@ var glide = new Glide('.glide',{
   			type: 'slider',
   			focusAt: 'center',
   			perView: 2,
-  			// autoplay: 2000,
+  			autoplay: 2000,
   			gap: 30,
   			breakpoints: {
   				760:{
