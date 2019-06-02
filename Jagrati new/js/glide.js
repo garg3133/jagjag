@@ -2,12 +2,12 @@ var glide = new Glide('.glide',{
   			type: 'slider',
   			focusAt: 'center',
   			perView: 2,
-  			autoplay: 2000,
+  			// autoplay: 2000,
   			gap: 30,
   			breakpoints: {
   				760:{
   					perView: 1,
-  					
+
   				}
   			}
   		})
@@ -38,3 +38,12 @@ glide.on(['mount.after', 'run'], function () {
 })
 
 glide.mount()
+
+// 
+
+document.querySelector(".card").addEventListener('touchend', handleTouchEnd, false);
+function handleTouchEnd(){
+	var ind = glide.index;
+	document.querySelectorAll(".glide__bullet")[ind].click();
+}
+// console.log(document.querySelectorAll(".glide__bullet")[glide.index]);
