@@ -27,14 +27,19 @@ function for_media_query(x){
 		document.getElementById("inavbar2").style.height="0px";
 		document.getElementById("inav-button").style.display="block";
 		document.getElementById("inav-button-close").style.display="none";
+
+		document.querySelector(".disable_arrows").style.display="none";
 	}
 	else{
 		document.getElementById("inavbar2").style.padding="0";
 		document.getElementById("inavbar2").style.height="0px";
 		document.getElementById("inav-button").style.display="none";
 		document.getElementById("inav-button-close").style.display="none";
+
+		document.querySelector(".disable_arrows").style.display="block";
 	}
 }
+
 var x=window.matchMedia("(max-width:760px)");
 for_media_query(x);
 x.addListener(for_media_query);  /*Whenever value of x is changed, for_media_query is called.*/
@@ -66,13 +71,13 @@ modal_cl.onclick = function(){
 
 //Google Map API
 function myMap() {
-var mapProp= {
-  center:new google.maps.LatLng(23.1782409,80.0252362),
-  zoom:15,
-};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-var marker = new google.maps.Marker({position: mapProp.center});
-marker.setMap(map); 
+	var mapProp= {
+	  center:new google.maps.LatLng(23.1782409,80.0252362),
+	  zoom:15,
+	};
+	var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	var marker = new google.maps.Marker({position: mapProp.center});
+	marker.setMap(map); 
 }
 
 // SHOWCASE TEXT
@@ -86,3 +91,4 @@ function show_p(){
 		setTimeout(show_p, 50); //speed is in milliseconds
 	}
 }
+
