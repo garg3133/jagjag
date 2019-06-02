@@ -3,7 +3,13 @@ var glide = new Glide('.glide',{
   			focusAt: 'center',
   			perView: 2,
   			autoplay: 2000,
-  			gap: 30
+  			gap: 30,
+  			breakpoints: {
+  				760:{
+  					perView: 1,
+  					
+  				}
+  			}
   		})
 
 var ele = document.querySelectorAll(".glide__slides li")
