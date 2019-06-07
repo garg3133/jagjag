@@ -250,6 +250,12 @@ nav{
 #about-us h1, #about-us h2{
 	color: white;
 }
+#about-us h2{
+	font-size: 1.5rem;
+}
+#about-us p{
+	font-size: 1rem;
+}
 #about-us h1::after{
 	content: "";
 	display: block;
