@@ -1,10 +1,7 @@
 /*GLOBAL*/
 
-html{
-	font-size: 10px;
-}
 body{
-	font: 1.5rem/1.5 Arial ,Helvetica ,sans-serif;
+	font: 15px/1.5 Arial ,Helvetica ,sans-serif;
 	margin : 0;
 	padding: 0;
 	background: #d4d4d4;
@@ -253,12 +250,12 @@ nav{
 #about-us h1, #about-us h2{
 	color: white;
 }
-/* #about-us h2{
+#about-us h2{
 	font-size: 1.5rem;
 }
 #about-us p{
 	font-size: 1rem;
-} */
+}
 #about-us h1::after{
 	content: "";
 	display: block;
