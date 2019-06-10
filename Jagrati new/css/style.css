@@ -1,5 +1,4 @@
 /*GLOBAL*/
-
 body{
 	font: 15px/1.5 Arial ,Helvetica ,sans-serif;
 	margin : 0;
@@ -250,12 +249,6 @@ nav{
 #about-us h1, #about-us h2{
 	color: white;
 }
-#about-us h2{
-	font-size: 1.5rem;
-}
-#about-us p{
-	font-size: 1rem;
-}
 #about-us h1::after{
 	content: "";
 	display: block;
@@ -267,6 +260,9 @@ nav{
 }
 #about-us img{
 	width: 100%;
+}
+#about-us .container div{
+	max-height: 500px;
 }
 .vision{
 	display: grid;
