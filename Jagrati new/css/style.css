@@ -243,7 +243,7 @@ nav{
 	/* display: block; */
 }
 .nav-up{
-	background-color: black;
+	background-color: whitesmoke;
 	width: 20px;
 	height: 5px;
 	transform: rotateZ(45deg);
@@ -252,7 +252,7 @@ nav{
 
 }
 .nav-down{
-	background-color: black;
+	background-color: whitesmoke;
 	width: 20px;
 	height: 5px;
 	transform: rotateZ(-45deg);
