@@ -6,7 +6,7 @@ body{
 	background: #d4d4d4;
 }
 header{
-	background: #666;
+	background: rgb(80, 80, 80);
 	min-height: 60px;
 }
 .clr{
@@ -73,10 +73,12 @@ a:hover{
 /*NAV BAR STARTS*/
 
 nav{
-	position: sticky;
-	top: 0;
+	/* position: sticky;
+	top: 0; */
 	background-color: #ff8c00;
 	z-index: 1;
+
+	height: 10px;
 }
 .navbut{
 	border: 1px red solid;
@@ -188,7 +190,7 @@ nav{
 	width: 100%;
 	background-color: rgba(255,140,0,0.9);
 	box-sizing: border-box;
-	height:0px;
+	height: 0px;
 	overflow: hidden;
 	transition: 400ms;
 }
@@ -210,6 +212,95 @@ nav{
 .navbar2 li a{
 	display: block;
 }
+
+/* SIDE NAVBAR STARTS */
+
+.side-nav{
+	position: fixed;
+	left: -121px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 5;
+	width: 120px;
+	transition: left 1s;
+
+	/* background-color: #ff8c00; */
+}
+.nav-menu-change{
+	left: 0px;
+	transition: left 1s;
+}
+
+#nav-control{
+	position: absolute;
+	left: 120px;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 0 10px;
+	cursor: pointer;
+	/* width: 40px;
+	height: 50px; */
+	/* display: block; */
+}
+.nav-up{
+	background-color: black;
+	width: 20px;
+	height: 5px;
+	transform: rotateZ(45deg);
+	transition: 1s;
+	margin: 7.1px 0;
+
+}
+.nav-down{
+	background-color: black;
+	width: 20px;
+	height: 5px;
+	transform: rotateZ(-45deg);
+	transition: 1s;
+	margin: 7.1px 0;
+}
+.nav-control-change .nav-up{
+	transform: rotateZ(-45deg);
+}
+.nav-control-change .nav-down{
+	transform: rotateZ(45deg);
+}
+
+/* .side-nav a{
+	display: inline-block;
+	padding: 5px;
+	background-color: #fb3958;
+} */
+.side-nav ul{
+	
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.side-nav li{
+	display: block;
+	padding: 0;
+	/* padding-left: 5px; */
+	color: white;
+	/* border: 1px white solid; */
+	border-radius: 5px;
+	/* width: 77%; */
+	margin: 5px auto;
+}
+.side-nav li a{
+	display: block;
+	background-color: #ff8c00;
+	padding: 10px;
+	border: 1px red solid;
+	border-left: none;
+	border-radius: 0 5px 5px 0;
+}
+.side-nav li a:hover{
+	background-color: red;
+}
+
+
+/* SIDE NAVBAR ENDS */
 
 /*SHOWCASE STARTS*/
 
