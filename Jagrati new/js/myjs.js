@@ -4,6 +4,7 @@
 //Nav button controls
 
 const side_nav = document.querySelector(".side-nav");
+const nav_controller = document.querySelector("#nav-control");
 function nav_control(x){
 	x.classList.toggle("nav-control-change");
 	side_nav.classList.toggle("nav-menu-change");
@@ -59,6 +60,17 @@ window.onclick = function(e){
 	// 		nav_button_close();
 	// 	}
 	// }
+	
+	if(nav_controller.classList.contains("nav-control-change")){
+		const nav_up = document.querySelector(".nav-up");
+		const nav_down = document.querySelector(".nav-down");
+		if(!(e.target===nav_controller || e.target===nav_up || e.target===nav_down)){
+			// nav_control(x);
+			nav_control(nav_controller);
+		}
+	}
+
+
 	// Donate us modal close
 	if(e.target == don_modal){
 		don_modal.style.display="none";

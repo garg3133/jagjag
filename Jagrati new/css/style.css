@@ -248,7 +248,7 @@ nav{
 	height: 5px;
 	transform: rotateZ(45deg);
 	transition: 1s;
-	margin: 7.1px 0;
+	margin: 6.2px 0;
 
 }
 .nav-down{
@@ -257,7 +257,7 @@ nav{
 	height: 5px;
 	transform: rotateZ(-45deg);
 	transition: 1s;
-	margin: 7.1px 0;
+	margin: 6.2px 0;
 }
 .nav-control-change .nav-up{
 	transform: rotateZ(-45deg);
@@ -353,7 +353,7 @@ nav{
 	width: 100%;
 }
 #about-us .container div{
-	max-height: 500px;
+	max-height: 700px;
 }
 .vision{
 	display: grid;
@@ -416,7 +416,7 @@ nav{
 	color: #ff8c00;
 	border-radius: 4px;
 	padding: 10px 20px;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	transition: 400ms;
 }
 .q1 a{
